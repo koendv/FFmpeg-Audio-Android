@@ -10,6 +10,10 @@ Supported Architecture
 
 Instructions
 ----
+* Install Android NDK
+
+  Download [Android NDK](https://developer.android.com/ndk/index.html).
+
 * Clone git repository
 
   `git clone --recursive https://github.com/koendv/FFmpeg-Audio-Android`
@@ -29,7 +33,7 @@ Instructions
   `./android_build.sh`
   
 * Find the executable binary in build directory.
-* You can also download [prebuilt-binaries](https://github.com/koendv/FFmpeg-Audio-Android/raw/master/release/ffmpeg_android_binary.zip)
+* You can also download [prebuilt-binaries](https://github.com/koendv/FFmpeg-Audio-Android/raw/master/release/ffmpeg_android_binary.zip) (Compiled with android-ndk-r10e)
 
 License
 ----
