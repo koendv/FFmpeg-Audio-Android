@@ -10,7 +10,7 @@ Supported Architecture
 
 Instructions
 ----
-* Install Android NDK
+* Install Android NDK on linux
 
   Download [Android NDK](https://developer.android.com/ndk/index.html). I am using Android NDK r10e.
 
