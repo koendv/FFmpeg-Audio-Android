@@ -8,6 +8,9 @@ case $1 in
   armeabi-v7a | armeabi-v7a-neon)
     CPU='cortex-a8'
   ;;
+  arm64-v8a)
+    CPU='armv8-a'
+  ;;
   x86)
     CPU='i686'
   ;;
@@ -17,6 +20,7 @@ case $1 in
 esac
 
 make clean
+rm -f compat/strtod.o
 
 ./configure \
 --target-os="$TARGET_OS" \

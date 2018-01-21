@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# export ANDROID_NDK=/opt/android-ndk-r10e/
+
 . settings.sh
 
 BASEDIR=$(pwd)
@@ -16,3 +18,5 @@ do
 done
 
 rm -rf ${TOOLCHAIN_PREFIX}
+
+./mkzip.sh

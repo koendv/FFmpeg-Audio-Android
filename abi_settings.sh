@@ -6,21 +6,42 @@ BASEDIR=$2
 
 case $1 in
   armeabi-v7a)
+    ANDROID_API_VERSION=9
+    NDK_TOOLCHAIN_ABI_VERSION=4.8
     NDK_ABI='arm'
     NDK_TOOLCHAIN_ABI='arm-linux-androideabi'
     NDK_CROSS_PREFIX="${NDK_TOOLCHAIN_ABI}"
   ;;
   armeabi-v7a-neon)
+    ANDROID_API_VERSION=9
+    NDK_TOOLCHAIN_ABI_VERSION=4.8
     NDK_ABI='arm'
     NDK_TOOLCHAIN_ABI='arm-linux-androideabi'
     NDK_CROSS_PREFIX="${NDK_TOOLCHAIN_ABI}"
     CFLAGS="${CFLAGS} -mfpu=neon"
   ;;
+  arm64-v8a)
+    ANDROID_API_VERSION=21
+    NDK_TOOLCHAIN_ABI_VERSION=4.9
+    NDK_ABI='arm64'
+    NDK_TOOLCHAIN_ABI='aarch64-linux-android'
+    NDK_CROSS_PREFIX="${NDK_TOOLCHAIN_ABI}"
+  ;;
   x86)
+    ANDROID_API_VERSION=9
+    NDK_TOOLCHAIN_ABI_VERSION=4.8
     NDK_ABI='x86'
     NDK_TOOLCHAIN_ABI='x86'
     NDK_CROSS_PREFIX="i686-linux-android"
     CFLAGS="$CFLAGS -march=i686"
+  ;;
+  x86-64)
+    ANDROID_API_VERSION=21
+    NDK_TOOLCHAIN_ABI_VERSION=4.9
+    NDK_ABI='x86_64'
+    NDK_TOOLCHAIN_ABI='x86_64'
+    NDK_CROSS_PREFIX="x86_64-linux-android"
+    CFLAGS="$CFLAGS -march=x86-64"
   ;;
 esac
 

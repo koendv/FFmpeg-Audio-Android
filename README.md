@@ -12,7 +12,7 @@ Instructions
 ----
 * Install Android NDK
 
-  Download [Android NDK](https://developer.android.com/ndk/index.html).
+  Download [Android NDK](https://developer.android.com/ndk/index.html). I am using Android NDK r10e.
 
 * Clone git repository
 
@@ -28,11 +28,12 @@ Instructions
   
 * Run following commands to compile ffmpeg
 
-  `sudo apt-get --quiet --yes install build-essential git autoconf libtool pkg-config gperf gettext yasm python-lxml`
+  `sudo apt-get --quiet --yes install build-essential git autoconf libtool pkg-config gperf gettext yasm python-lxml zip`
   
   `./android_build.sh`
   
-* Find the executable binary in build directory.
+* Find the executable binary in build directory. Find a zip of executables for various architectures in the release directory.
+
 * You can also download [prebuilt-binaries](https://github.com/koendv/FFmpeg-Audio-Android/raw/master/release/ffmpeg_android_binary.zip) (Compiled with android-ndk-r10e)
 
 License
