@@ -7,6 +7,8 @@ Supported Architecture
 ----
 * armv7
 * armv7-neon
+* arm64
+* x86-64
 
 Instructions
 ----
