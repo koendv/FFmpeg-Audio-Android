@@ -56,7 +56,7 @@ rm -f compat/strtod.o
 --enable-protocol='file,pipe,tcp' \
 --disable-demuxers \
 --disable-muxers \
---enable-demuxer='aac,aiff,matroska,mp3,ogg,pcm_alaw,pcm_f32be,pcm_f32le,pcm_f64be,pcm_f64le,pcm_mulaw,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_s8,pcm_u16be,pcm_u16le,pcm_u24be,pcm_u24le,pcm_u32be,pcm_u32le,pcm_u8,wav' \
+--enable-demuxer='aac,aiff,asf,asf_o,flac,gsm,matroska,mp3,ogg,pcm_alaw,pcm_f32be,pcm_f32le,pcm_f64be,pcm_f64le,pcm_mulaw,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_s8,pcm_u16be,pcm_u16le,pcm_u24be,pcm_u24le,pcm_u32be,pcm_u32le,pcm_u8,wav' \
 --enable-muxer='aiff,flac,matroska,matroska_audio,mp3,oga,ogg,opus,pcm_alaw,pcm_f32be,pcm_f32le,pcm_f64be,pcm_f64le,pcm_mulaw,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_s8,pcm_u16be,pcm_u16le,pcm_u24be,pcm_u24le,pcm_u32be,pcm_u32le,pcm_u8,wav' \
 --disable-filters \
 --enable-filter='abuffer,abuffersink,acompressor,acontrast,acopy,acrossfade,acrusher,adelay,aecho,aemphasis,aeval,aevalsrc,afade,afftfilt,afir,aformat,agate,aiir,alimiter,allpass,aloop,amerge,amix,anequalizer,anoisesrc,anull,anullsink,anullsrc,apad,aphaser,apulsator,aresample,areverse,asetnsamples,asetrate,ashowinfo,astats,atempo,atrim,bandpass,bandreject,bass,biquad,bs2b,channelmap,channelsplit,chorus,compand,compensationdelay,crossfeed,crystalizer,dcshift,dynaudnorm,earwax,equalizer,extrastereo,firequalizer,flanger,flite,haas,hdcd,headphone,highpass,hilbert,join,ladspa,loudnorm,lowpass,lv2,mcompand,pan,replaygain,resample,rubberband,sidechaincompress,sidechaingate,silencedetect,silenceremove,sine,sofalizer,stereotools,stereowiden,superequalizer,surround,treble,tremolo,vibrato,volume,volumedetect' \
@@ -65,7 +65,7 @@ rm -f compat/strtod.o
 --disable-encoders \
 --disable-decoders \
 --enable-encoder='aac,aac_at,alac,alac_at,flac,libmp3lame,libopus,libshine,libvorbis,opus,pcm_alaw,pcm_alaw_at,pcm_f32be,pcm_f32le,pcm_f64be,pcm_f64le,pcm_mulaw,pcm_mulaw_at,pcm_s16be,pcm_s16be_planar,pcm_s16le,pcm_s16le_planar,pcm_s24be,pcm_s24daud,pcm_s24le,pcm_s24le_planar,pcm_s32be,pcm_s32le,pcm_s32le_planar,pcm_s64be,pcm_s64le,pcm_s8,pcm_s8_planar,pcm_u16be,pcm_u16le,pcm_u24be,pcm_u24le,pcm_u32be,pcm_u32le,pcm_u8,wmav1,wmav2' \
---enable-decoder='aac,aac_at,aac_fixed,aac_latm,alac,alac_at,flac,libopus,libvorbis,mp3,mp3_at,mp3adu,mp3adufloat,mp3float,mp3on4,mp3on4float,pcm_alaw,pcm_alaw_at,pcm_f16le,pcm_f24le,pcm_f32be,pcm_f32le,pcm_f64be,pcm_f64le,pcm_lxf,pcm_mulaw,pcm_mulaw_at,pcm_s16be,pcm_s16be_planar,pcm_s16le,pcm_s16le_planar,pcm_s24be,pcm_s24daud,pcm_s24le,pcm_s24le_planar,pcm_s32be,pcm_s32le,pcm_s32le_planar,pcm_s64be,pcm_s64le,pcm_s8,pcm_s8_planar,pcm_u16be,pcm_u16le,pcm_u24be,pcm_u24le,pcm_u32be,pcm_u32le,pcm_u8,wmalossless,wmapro,wmav1,wmav2,wmavoice' \
+--enable-decoder='aac,aac_at,aac_fixed,aac_latm,ac3,ac3_at,ac3_fixed,alac,alac_at,atrac1,atrac3,atrac3p,eac3,eac3_at,flac,gsm,gsm_ms,gsm_ms_at,libopus,libvorbis,mp2,mp2_at,mp2float,mp3,mp3_at,mp3adu,mp3adufloat,mp3float,mp3on4,mp3on4float,pcm_alaw,pcm_alaw_at,pcm_f16le,pcm_f24le,pcm_f32be,pcm_f32le,pcm_f64be,pcm_f64le,pcm_lxf,pcm_mulaw,pcm_mulaw_at,pcm_s16be,pcm_s16be_planar,pcm_s16le,pcm_s16le_planar,pcm_s24be,pcm_s24daud,pcm_s24le,pcm_s24le_planar,pcm_s32be,pcm_s32le,pcm_s32le_planar,pcm_s64be,pcm_s64le,pcm_s8,pcm_s8_planar,pcm_u16be,pcm_u16le,pcm_u24be,pcm_u24le,pcm_u32be,pcm_u32le,pcm_u8,vorbis,wmalossless,wmapro,wmav1,wmav2,wmavoice' \
 --disable-bsfs \
 --disable-indevs \
 --disable-outdevs \
